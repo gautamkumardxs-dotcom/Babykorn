@@ -5,7 +5,7 @@ import VideoPlayer from '../components/VideoPlayer/VideoPlayer'
 const Homepage = () => {
   return (
    <>
-   <VideoPlayer />
+   {/* <VideoPlayer /> */}
    </>
   )
 }
