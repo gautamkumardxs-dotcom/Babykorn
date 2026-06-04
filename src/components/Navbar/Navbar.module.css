@@ -1,0 +1,114 @@
+.nav{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    background:#FFD006;
+    /* padding: 3rem 1rem; */
+    /* padding-bottom: 2rem; */
+    position: relative;
+    /* overflow: hidden; */
+}
+
+
+.topContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topContainer img{
+  width:5rem;
+    /* border: 2px solid red; */
+
+}
+.topContainer i{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+}
+#close{
+    display: none;
+}
+.midContainer{
+    /* width: 100%; */
+  display: flex;
+  gap:1rem;
+  flex-direction: column;
+  align-items: center;
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 100%;
+    width: 100%;    
+    background:#FFD006;
+    padding: 1rem 0;
+    transition: transform 0.5s ease-in-out;
+    border-bottom-right-radius: 10px;
+    transform:translateX(-100%);
+    padding: 2rem 0;
+    z-index: 100;
+
+}
+.navlink{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+    width:75%;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 100px;
+     border: 2px dotted transparent;
+border-radius: 10px;
+transition: border .3s ease-in-out;
+
+
+}
+.activeLink, .navlink:hover{
+    
+    /* font-style: italic; */
+    /* color: white; */
+    text-decoration: none;
+    color:#12DDEC;
+    /* transform: scale(1.2); */
+    border: 2px dotted gray;
+border-radius: 10px;
+    background: rgba(0, 0, 0,.1);
+
+
+
+}
+   #currentPath{
+    font-weight:900;
+     font-size: 1rem;
+    color:#12DDEC;
+     
+   }
+
+@media (min-width: 768px) {
+    .nav{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 3rem;
+
+    }
+    .midContainer{
+        flex-direction: row;
+        width: auto;
+        gap: 2rem;
+        position: static;
+        transform: translateX(0);
+        padding: 0;
+    }
+    .midContainer hr{
+        display: none;
+    }
+   .navlink{
+        /* width: auto; */
+        padding: 5px 1rem;
+        white-space: nowrap;
+    }
+    #open, #close{
+        display: none;
+    }
+    #currentPath{
+        display: none;
+    }
+}
