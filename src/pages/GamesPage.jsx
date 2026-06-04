@@ -12,7 +12,7 @@ const GamesPage = (props) => {
   return (
    <>
     <PageHeader header = {header} description = {description} bgcolor={bgcolor} />
-    <VideoPlayer />
+    {/* <VideoPlayer /> */}
     </>
    
   )
