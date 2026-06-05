@@ -1,20 +1,13 @@
 import React from 'react'
 import styles from './VideoPlayer.module.css'
+import video from '../../assets/videos/video.mp4'
 
 const VideoPlayer = () => {
   return (
     <section className={styles.videoPlayer}>
-        <div className={styles.videoContainer}>
-            <iframe
-            width='100%'
-               
-                src="src\assets\videos\video.mp4"
-                title="YouTube video player"
-                // frameBorder="" hii
-                // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-            ></iframe>
-            </div>
+      <div className={styles.videoContainer}>
+        <video src={video} autoPlay loop  muted playsInline></video>
+        </div>
     </section>
   )
 }
