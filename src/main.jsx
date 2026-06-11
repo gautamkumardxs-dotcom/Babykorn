@@ -5,7 +5,7 @@ import { BrowserRouter, } from 'react-router-dom'
 
 
 
-createRoot(document.getElementById('root')).render(
+createRoot(document.getElementById('babykorn-studio')).render(
   <BrowserRouter>
     <App />
   </BrowserRouter>

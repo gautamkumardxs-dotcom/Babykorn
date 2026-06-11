@@ -1,0 +1,43 @@
+body{
+    max-width:1920px;
+    margin: 0 auto;
+
+    padding: 0;
+    font-family: my-font;
+    overflow-x: hidden;
+
+}
+
+:root{
+--title-font:2rem;
+--sub-title-font:1rem;
+--title-margin:1.5rem 0;
+--section-gap:2rem 0;
+--main-color:#FFD006 ;
+--title-gap:4rem;
+
+
+
+}
+@font-face {
+    font-family: my-font ;
+    src: url(../src/assets/images/fonts/Rubik-VariableFont_wght.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+section{
+    margin: var(--section-gap);
+    /* border: 1px solid green; */
+}
+button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+}

@@ -1,72 +1,80 @@
-.section{
-    position: relative;
-padding-bottom: 1rem;
+.section {
+  position: relative;
+  padding-bottom: 1rem;
 }
-.header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size:1.6rem;
-    /* border: 2px solid green; */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 1.6rem; */
+  /* border: 2px solid green; */
+  margin: var(--title-margin);
+  margin-bottom: var(--title-gap);
+}
+.header h2{
+  font-size: var(--title-font);
+}
+.Cards {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  padding: 0 3rem;
+  gap:4rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid gray; */
+  padding: 1rem;
+  border-radius: 30px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5  );
+
+}
+
+.banner {
+  width: 16rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.more {
+  text-decoration: none;
+  font-weight: 600;
+  position: absolute;
+  top: 50;
+  right: 15%;
+  font-size: 20px;
+  color: black;
+
+
+
+
+    padding: .5rem 1rem ;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
 
 
 }
-.Cards{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
+.more:hover{
+    /* box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.5  ); */
+    scale:1.1;
 
+
+  
 }
-
-.card{
-    display: flex;
+@media (max-width: 768px) {
+  .Cards {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    /* border: 1px solid gray; */
-    padding: 1rem;
-    border-radius:30px;
-    
-
-
-}
-.card div{
-    width: 15rem;
-    height: 200rem;
-    height: auto;
-    /* border: 2px solid red; */
-
-
-
-}
-.banner{
-    width: 15rem;
-    height: 18rem;
-    object-fit: cover;
-    object-position: center;
-    border-radius:2rem;
-    overflow: hidden;
-
-
-
-
-}
-.more{
-    text-decoration: none;
-    font-weight:600;
-    position:absolute;
-    top: 50;
-    right:15%;
-    font-size:20px;
-    color: black;
-}
-@media (max-width:768px) {
-    .Cards{
-        flex-direction:column;
-    }
-    .more{
-        bottom:1%;
-        right: 50%;
-        transform: translateX(50%);
-    }
+    padding-bottom: 5rem;
+  }
+  .more {
+    bottom:1%;
+    right: 50%;
+    transform: translateX(50%);
+  }
 }

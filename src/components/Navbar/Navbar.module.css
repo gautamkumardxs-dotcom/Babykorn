@@ -7,6 +7,9 @@
     /* padding-bottom: 2rem; */
     position: relative;
     /* overflow: hidden; */
+    position: sticky;
+    top: 0;
+    z-index: 100
 }
 
 
@@ -77,7 +80,10 @@ border-radius: 10px;
    #currentPath{
     font-weight:900;
      font-size: 1rem;
-    color:#12DDEC;
+    color:black;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
      
    }
 

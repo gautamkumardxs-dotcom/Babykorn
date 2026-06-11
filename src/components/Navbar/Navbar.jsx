@@ -12,10 +12,10 @@ const Navbar = () => {
     useEffect(() => {
 
 
-        setCurrentPath(location.pathname.replace('/', '').toUpperCase() || 'HOME');
-       
+        setCurrentPath(location.pathname.replace('/', '') || 'Home');
 
-    },[location.pathname]);
+
+    }, [location.pathname]);
 
 
     const handleHamburger = () => {
@@ -54,7 +54,7 @@ const Navbar = () => {
         <nav className={styles.nav}>
             <div className={styles.topContainer}>
                 <img src={header_logo} alt="Logo" />
-            <div  className={styles.currentPath} id={styles.currentPath}>{currentPath}</div>
+                <div className={styles.currentPath} id={styles.currentPath}>{currentPath}</div>
 
                 <i onClick={() => { handleHamburger() }} id={styles.open} className="ri-menu-5-line"></i>
                 <i onClick={() => { handleHamburger() }} id={styles.close} className="ri-close-line"></i>
